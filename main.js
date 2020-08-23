@@ -1,3 +1,5 @@
+const heading = document.getElementById("heading");
+heading.style.display = "none"
 let org = "devscollab";
 let repo = "sandbox";
 
@@ -25,6 +27,8 @@ const ListContributors = async () => {
   document.getElementById("inpgrp").innerHTML=""
   const main = document.getElementById("main");
   console.log(main);
+    heading.style.display = "block"
+
   
   json.forEach((e) => {
       avatar = e.avatar_url;
@@ -51,8 +55,7 @@ const ListContributors = async () => {
       </div>
     </div>
       `
-      
-      
+    
       console.log(userProfiles);
       main.appendChild(userProfiles)
     });
