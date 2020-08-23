@@ -26,7 +26,6 @@ const ListContributors = async () => {
   const json = await data.json();
   document.getElementById("inpgrp").innerHTML=""
   const main = document.getElementById("main");
-  console.log(main);
     heading.style.display = "block"
 
   
@@ -56,7 +55,6 @@ const ListContributors = async () => {
     </div>
       `
     
-      console.log(userProfiles);
       main.appendChild(userProfiles)
     });
     
